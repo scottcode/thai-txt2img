@@ -16,7 +16,6 @@ def stims(fname,colid=u'Sentence'):
     import codecs,re #,unicodedata
     
     # read in file
-    #fname = 'sents.txt'
     f = codecs.open(fname, 'r','utf_16')
     
     lines = f.readlines()
@@ -50,5 +49,3 @@ def stims(fname,colid=u'Sentence'):
             table[L].update(chunks)
     return table
 
-
-#stims('sents.txt')
