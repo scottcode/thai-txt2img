@@ -10,9 +10,7 @@ Created on Oct 27, 2012
 @author: jsh
 '''
 
-import th2img9_1, string, re, os, codecs, math
-
-th2img= th2img9_1
+import th2img, string, re, os, codecs, math
 
 wrapAfter = 44
 
@@ -23,7 +21,7 @@ wrapAfter = 44
 
 projDir = '/Users/jsh/Dropbox/UIUC/Thai Reading/workspace/txt2img'
 
-stimfile = os.path.join(projDir,'pracTargCoord.txt')
+stimfile = os.path.join(projDir,'stimuli_Thai.txt')
 #root = os.path.splitext(stimfile)[0] # splitext() returns (root,extension)
 
 raw_stimfile = codecs.open(stimfile,'r','utf_8')

@@ -9,9 +9,7 @@ Created on Oct 30, 2012
 @author: jsh
 '''
 
-import th2img9_1, os, codecs
-
-th2img= th2img9_1
+import th2img, os, codecs
 
 #wrapAfter = 44
 
@@ -22,7 +20,7 @@ th2img= th2img9_1
 
 projDir = '/Users/jsh/Dropbox/UIUC/Thai Reading/workspace/txt2img'
 
-quesFixedPath = os.path.join(projDir,'pracTargCoord_fixQuesAm_Qonly_handcorrect.txt')
+quesFixedPath = os.path.join(projDir,'stimuli_Thai.txt')
 quesFixedFile = codecs.open(quesFixedPath,'r','utf_8')
 quesFixed = quesFixedFile.readlines()
 quesFixed = [Qitem.strip() for Qitem in quesFixed ]
